@@ -1,0 +1,267 @@
+/*
+schemat kolorow
+#2B3D50 grafitowy
+#E74C3C czerwony
+#ECF0F1 jasny
+#3498DB jasny niebieski
+#2980B9 ciemny niebieski
+*/
+
+
+/* box-sizing */
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+
+/* General styles */
+body {
+    background-color: #ECF0F1;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Mock-up styles */
+div,
+header,
+nav,
+main,
+aside,
+footer {
+    background-color: white;
+    border-color: 2B3D50;
+    border-style: solid;
+    border-width: 1pt;
+    padding: 15pt;
+
+}
+
+p {}
+
+h1 {}
+
+ul {}
+
+li {}
+
+.infodiv {
+    background-color: #ECF0F1;
+    border-color: #3498DB;
+    border-style: solid;
+    border-width: 1pt;
+    color: #2980B9;
+    font-size: smaller;
+    margin: 0pt;
+    padding: 2px;
+    width: fit-content;
+}
+
+.color1 {
+    background-color: #2B3D50;
+    border-radius: 0%;
+}
+
+.color2 {
+    background-color: #E74C3C;
+    border-radius: 0%;
+}
+
+.color3 {
+    background-color: #ECF0F1;
+    border-radius: 0%;
+}
+
+.color4 {
+    background-color: #3498DB;
+    border-radius: 0%;
+}
+
+.color5 {
+    background-color: #2980B9;
+    border-radius: 0%;
+}
+
+
+/* Layout styles */
+header,
+nav,
+aside,
+main,
+footer {
+    max-width: 1000px;
+    margin: 4px auto;
+}
+
+footer {
+    font-size: smaller;
+}
+
+
+/* Navigation */
+.navigation li a,
+.subnav li a {
+    text-decoration: none;
+}
+
+.navigation,
+.subnav {
+    list-style-type: none;
+}
+
+.navigation li a:visited {
+    color: #2980B9;
+}
+
+.navigation li a:focus {
+    background-color: #ECF0F1;
+}
+
+.navigation li a:hover {
+    color: #2980B9;
+    border: 1px solid #2B3D50;
+}
+
+.navigation li a:active {
+    color: #E74C3C;
+}
+
+.subnav {}
+
+
+/* Additional styles */
+.title {
+    /* border: blue solid 5pt; */
+    background-color: #3498DB;
+    border-color: #2980B9;
+    border-style: solid;
+    border-width: 1pt;
+    color: #ECF0F1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10pt;
+    text-align: center;
+    max-width: 600pt;
+}
+
+.h1rightside {
+    font-size: medium;
+}
+
+.author {
+    font-size: small;
+    text-align: center;
+}
+
+
+/* main content */
+main {
+    line-height: 1.5;
+}
+
+
+/* linki w content */
+.link {
+    /* text-decoration: none; */
+}
+
+.link:visited {
+    color: #2B3D50;
+}
+
+.link:focus {
+    outline: 2px solid currentColor;
+}
+
+.link:hover {
+    background-color: #ECF0F1;
+    /* border-bottom: 1px solid; */
+    border-bottom: 1px solid currentColor;
+    color: #E74C3C;
+    outline: none;
+    text-decoration: none;
+}
+
+.link:active {
+    color: #2980B9;
+}
+
+
+/* elementy listy */
+.list {
+    list-style-type: upper-roman;
+}
+
+.listItem {
+    list-style-type: square;
+}
+
+
+/* tabela w content */
+.table {
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.tableContainer {
+    overflow-x: auto;
+    border: none;
+}
+
+tr:nth-child(even) {
+    background-color: #ECF0F1;
+}
+
+tr:hover {
+    background-color: #3498DB;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 6px 20px;
+}
+
+.tbtitle {
+    margin: 6px;
+}
+
+main div {
+    border-radius: 20px;
+
+}
+
+
+/* button js - zmiana motywu */
+.button {
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: whitesmoke;
+}
+
+.dark {
+    background-color: #2B3D50;
+    color: white;
+}
+
+.dark tr:nth-child(even) {
+    color: #2B3D50;
+}
+
+.dark .link {
+    color: white;
+}
+
+.dark .link:visited {
+    color: #E74C3C;
+}
